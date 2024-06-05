@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .navbar-burger {
+            cursor: pointer;
+        }
+        .skills {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            display: inline-block;
+            margin: 0.5em;
+            padding: 0.5em 1em;
+            background: #00d1b2;
+            color: white;
+            border-radius: 20px;
+        }
+        .hero {
+
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar is-light">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+            <img src="logo.png" alt="Logo">
+        </a>
+        <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="#">Home</a>
+            <a class="navbar-item" href="#">Profile</a>
+            <a class="navbar-item" href="#">Settings</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero is-primary is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Welcome to My Profile
+            </h1>
+            <h2 class="subtitle">
+                Explore my interests, skills, and get in touch!
+            </h2>
+        </div>
+    </div>
+</section>
+
+<!-- Profile Section -->
+<section class="section">
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                    <img class="is-rounded" src="profile_picture.png" alt="Profile Picture">
+                </figure>
+            </div>
+            <div class="column">
+                <h1 class="title">Lahcen</h1>
+                <p class="subtitle">I like sports, reading, and traveling.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="title">My Skills</h2>
+        <ul class="skills">
+            <li>Java</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Cryptography</li>
+            <li>Blockchain</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Meme Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="title">Coding Meme of the Week</h2>
+        <figure class="image is-4by3">
+            <img src="meme.jpg" alt="Coding Meme">
+        </figure>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="title">Contact Me</h2>
+        <form action="#" method="post">
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Your Name" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" type="email" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Your Message" required></textarea>
+                </div>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>Profile Page &copy; 2024</p>
+    </div>
+</footer>
+</body>
+</html>
